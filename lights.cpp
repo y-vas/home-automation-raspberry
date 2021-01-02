@@ -3,7 +3,6 @@
 #include <unordered_map>
 
 #include <unistd.h> // sleep for linux
-#include "gpio.cpp"
 
 using namespace std;
 
@@ -42,7 +41,6 @@ int switch_light( int pin ){
 }
 
 int main(){
-
   setup_gpio( 17 , INPUT , PUD_OFF );
 
   // for (auto x : pins)
