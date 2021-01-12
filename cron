@@ -1,1 +1,1 @@
-@reboot ./home/pi/home-atuomation-raspberry/lights
+@reboot ./home/pi/home-atuomation-raspberry/lights.py
