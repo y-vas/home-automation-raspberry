@@ -1,7 +1,4 @@
 ## Raspberry home project
-Home plan
+Home Plan
 
-![plan](imgs/plan.png)
-
-Rooms id
 ![rooms](imgs/rooms.png)
