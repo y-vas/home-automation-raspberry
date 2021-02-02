@@ -13,6 +13,8 @@ relations = [
  [ 0, 17, 34, 0 ], # 5th room
 ]
 
+# blinds schedule
+
 def switch( id ):
     if relations[id] == 1:
         GPIO.setup(reley, GPIO.HIGH)
