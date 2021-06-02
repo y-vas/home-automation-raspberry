@@ -1,2 +1,4 @@
 lights
 *.blend1
+vendor
+composer.lock
