@@ -4,8 +4,7 @@ use Mark\App;
 require '../vendor/autoload.php';
 
 $api = new App('http://0.0.0.0:3000');
-$api->count = 4; // process count
-
+$api->count = 4;
 $api->any('/', function ($requst) {
 
   return 'Hello world';

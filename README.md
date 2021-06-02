@@ -1,4 +1,4 @@
-<center>
+<div align='center'>
 RASPBERRY HOME PROJECT
 
 ------------------- Home Plan ------------------
@@ -6,7 +6,6 @@ RASPBERRY HOME PROJECT
 ```
   php index.php start -d
 ```
-
 <img src='imgs/rooms.png' height=400
   style='
     -webkit-transform: rotate(90deg);
