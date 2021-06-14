@@ -6,7 +6,7 @@ RASPBERRY HOME PROJECT
 ```
   php index.php start -d
 ```
-<img src='imgs/rooms.png' height=400
+<img src='img/rooms.png' height=400
   style='
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);

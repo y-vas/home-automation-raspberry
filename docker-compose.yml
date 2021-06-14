@@ -4,7 +4,7 @@ services:
   utils_server:
     build:
       context    : ./
-      dockerfile : ./docker/utils/Dockerfile
+      dockerfile : ./sys/server/Dockerfile
     volumes:
       - ./:/var/www/
     depends_on:
