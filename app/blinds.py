@@ -13,7 +13,9 @@ GPIO.output( pin_down, GPIO.LOW )
 
 def move_shutters( pin, sec ):
     GPIO.output(pin, GPIO.HIGH)
-    sleep(sec)
+
+    sleep( sec )
+
     GPIO.output(pin, GPIO.LOW)
 
 move_shutters( pin_up , 20 )

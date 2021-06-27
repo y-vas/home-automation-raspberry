@@ -1,18 +1,24 @@
-        ###### ##!/usr/bi#####n/python##########
+#!/usr/bin/python
+
+print('hi loo')
+exit()
+
 import RPi.GPIO as GPIO
 from time import sleep
 
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode( GPIO.BCM )
 
 relations = [
-    # room , sound_pin, reley_pin, reley_status
-     [ 1, 17, 34, 0 ],
-     [ 2, 17, 34, 0 ],
-     [ 3, 17, 34, 0 ],
-     [ 4, 17, 34, 0 ],
-     [ 0, 17, 34, 0 ], # 5th room
-]
+  # room , sound_pin, reley_pin, reley_status
+  [ 1 , 17 , 34 , 0 ],
+  [ 2 , 17 , 34 , 0 ],
+  [ 3 , 17 , 34 , 0 ],
+  [ 4 , 17 , 34 , 0 ],
+  [ 0 , 17 , 34 , 0 ],
+];
 
+########################################
+############### 5th room ###############
 ############ blinds schedule ###########
 
 def switch( id ):

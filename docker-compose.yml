@@ -5,6 +5,7 @@ services:
     build:
       context    : ./
       dockerfile : ./sys/server/Dockerfile
+      
     volumes:
       - ./:/var/www/
     depends_on:
