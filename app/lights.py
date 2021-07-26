@@ -1,9 +1,6 @@
 #!/usr/bin/python
 
-print('hi loo')
-exit()
-
-import RPi.GPIO as GPIO
+import sys, RPi.GPIO as GPIO
 from time import sleep
 
 GPIO.setmode( GPIO.BCM )
@@ -26,13 +23,19 @@ def switch( id ):
         GPIO.setup(reley, GPIO.HIGH)
     else:
         GPIO.setup(reley, GPIO.LOW)
-    relations[id] = int(relations[id]!=1)
+
+    relations[id] = int( relations[ id ] != 1 )
 
 for id, sound, reley, rs in relations:
+
+    # setup the lights
     GPIO.setup(sound, GPIO.IN)
     GPIO.setup(reley, GPIO.IN)
 
+    # detect sound
     GPIO.add_event_detect( sound, GPIO.BOTH, bouncetime=300)
-    GPIO.add_event_callback(sound, lambda: switch(id) )
+    GPIO.add_event_callback( sound, lambda: switch(id) )
 
-while True: sleep(1)
+while True:
+    sleep( 1 )
+    # keep the thread alive
